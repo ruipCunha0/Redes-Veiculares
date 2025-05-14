@@ -1,0 +1,50 @@
+#
+# nodes: 5, max time: 27.000000, max x: 600.00, max y: 600.00
+# nominal range: 300.00 link bw: 54000000.00
+# pause: 30.00, min speed 1.50 max speed: 4.50
+
+# Initials coordinates of the wlan nodes
+
+# V6
+$node_(15) set X_ 1015.0
+$node_(15) set Y_ 736.0
+$node_(15) set Z_ 0.00
+
+# V5
+$node_(16) set X_ 1050.0
+$node_(16) set Y_ 623.0
+$node_(16) set Z_ 0.00
+
+# V3
+$node_(17) set X_ 1305.0
+$node_(17) set Y_ 713.0
+$node_(17) set Z_ 0.00
+
+# V4
+$node_(18) set X_ 1169.0
+$node_(18) set Y_ 555.0
+$node_(18) set Z_ 0.00
+
+# V2
+$node_(19) set X_ 1634.0
+$node_(19) set Y_ 675.0
+$node_(19) set Z_ 0.00
+
+# V1
+$node_(20) set X_ 1662.0
+$node_(20) set Y_ 599.0
+$node_(20) set Z_ 0.00
+
+# setdest xDest yDest velocityDest
+$ns_ at 1.00 "$node_(19) setdest 1400.0 790.0 60.0"
+$ns_ at 2.00 "$node_(16) setdest 815.0 548.0 80.0" # V5
+$ns_ at 3.00 "$node_(18) setdest 1258.0 816.0 65.0" # V4
+$ns_ at 4.00 "$node_(15) setdest 1533.0 817.0 65.0" # V6
+$ns_ at 5.00 "$node_(17) setdest 1443.0 545.0 65.0" # V3
+$ns_ at 6.00 "$node_(19) setdest 1680.0 650.0 65.0" # V2
+$ns_ at 7.00 "$node_(20) setdest 1805.0 404.0 65.0" # V1
+$ns_ at 10.00 "$node_(15) setdest 1358.0 920.0 65.0"
+$ns_ at 12.00 "$node_(16) setdest 930.0 650.0 65.0"
+$ns_ at 14.00 "$node_(17) setdest 1543.0 645.0 65.0"
+$ns_ at 16.00 "$node_(18) setdest 970.0 750.0 65.0"
+$ns_ at 18.00 "$node_(19) setdest 700.0 450.0 65.0"
